@@ -12,6 +12,7 @@ This project is intentionally minimal and focused on:
 
 ## Project Structure
 
+```text
 go-whiteboard/
 ├── go.mod
 ├── README.md
@@ -23,11 +24,9 @@ go-whiteboard/
 │ ├── list.go
 │ ├── list_test.go
 │ └── ...
-
+```
 
 Each problem lives in its own file with a corresponding `_test.go` file.
-
----
 
 ## Running Tests
 
@@ -35,46 +34,26 @@ From the project root:
 
 ```bash
 go test ./... -v
+```
 
 Tests are used to quickly validate correctness and edge cases.
 
-Problem-Solving Approach
+## Problem-Solving Approach
 
 For each problem, I follow a consistent interview-friendly flow:
+- Clarify inputs, outputs, and constraints
+- Walk through a small example
+- Choose an approach and state time/space complexity
+- Implement the solution
+- Walk the example against the code
+- Call out edge cases
 
-Clarify inputs, outputs, and constraints
-
-Walk through a small example
-
-Choose an approach and state time/space complexity
-
-Implement the solution
-
-Walk the example against the code
-
-Call out edge cases
-
-Why Go
+## Why Go
 
 Go’s simplicity makes reasoning about data structures explicit and readable.
 Its tooling enables fast feedback, which is ideal for interview-style problem solving.
 
-Notes
+## Notes
 
 This repository is designed for practice and discussion.
 Solutions are written to be easily explained on a whiteboard.
-
-
-Save the file (`Ctrl+S`).
-
----
-
-## 3️⃣ Verify it exists
-Back in terminal:
-
-```bash
-ls
-
-You should see:
-
-README.md  go.mod  problems/
